@@ -8,32 +8,32 @@
 #
 # The url/sha256 per platform are filled in per release by
 # packaging/homebrew/render-formula.sh from the release's binary assets.
-# The 0.1.1 / __SHA_*__ placeholders below are substituted there.
+# The 0.2.0 / __SHA_*__ placeholders below are substituted there.
 class Klaridian < Formula
   desc "Generate MCP servers from an OpenAPI spec — native binary, no Node required"
   homepage "https://klaridian.dev"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.1.1/klaridian-darwin-arm64"
-      sha256 "fa0f80ddc2b5471cad640037d4e0e9b3017b1955eb98a1e0329e734df1e86a9f"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-darwin-arm64"
+      sha256 "18d063915ca06b7cde5edd58897d26ce882992f5db72601366af68893f93a0c4"
     end
     on_intel do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.1.1/klaridian-darwin-x64"
-      sha256 "db8c6627581969e01b90ab53eaeb3dc68e624d09eccd287bf1781b1a563ef181"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-darwin-x64"
+      sha256 "433ad95c2bd3aa8c237c6958a8b9de5b1755baa7d19d0100da84c396f7a80d31"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.1.1/klaridian-linux-arm64"
-      sha256 "a8967cbdad783b1319b78f821b485365668aa22a7579ac3db7fcc2eab1d92bc1"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-linux-arm64"
+      sha256 "21cb19e48efb983ce9361f3a75e213e5a5752e2d5b31d4ffc44f37ff47a56838"
     end
     on_intel do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.1.1/klaridian-linux-x64"
-      sha256 "38bc5d9047434118b289d0f52a5d32b62df9b80edc715958fbb1217d8d46d09a"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-linux-x64"
+      sha256 "0f75d108e7090ee87bb1f9c63e951abb474f8f49ccecb9784c532262e394b96a"
     end
   end
 
