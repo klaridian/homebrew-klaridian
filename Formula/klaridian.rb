@@ -8,32 +8,32 @@
 #
 # The url/sha256 per platform are filled in per release by
 # packaging/homebrew/render-formula.sh from the release's binary assets.
-# The 0.2.0 / __SHA_*__ placeholders below are substituted there.
+# The 0.4.0 / __SHA_*__ placeholders below are substituted there.
 class Klaridian < Formula
   desc "Generate MCP servers from an OpenAPI spec — native binary, no Node required"
   homepage "https://klaridian.dev"
-  version "0.2.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-darwin-arm64"
-      sha256 "18d063915ca06b7cde5edd58897d26ce882992f5db72601366af68893f93a0c4"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.4.0/klaridian-darwin-arm64"
+      sha256 "777975f5161a6f813da6ed0bfeff998f94a88cfe7193d60a02139f28440f9906"
     end
     on_intel do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-darwin-x64"
-      sha256 "433ad95c2bd3aa8c237c6958a8b9de5b1755baa7d19d0100da84c396f7a80d31"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.4.0/klaridian-darwin-x64"
+      sha256 "000f6a1fd177c0072d1ddc6881cb6e7961169017ce8ee41db2ff34df6c21b378"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-linux-arm64"
-      sha256 "21cb19e48efb983ce9361f3a75e213e5a5752e2d5b31d4ffc44f37ff47a56838"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.4.0/klaridian-linux-arm64"
+      sha256 "79f78eeeea6a884f4651cc1d28dd3fdf0f03deb1bfebfbbbe4e89ca20ddf3a38"
     end
     on_intel do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.2.0/klaridian-linux-x64"
-      sha256 "0f75d108e7090ee87bb1f9c63e951abb474f8f49ccecb9784c532262e394b96a"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.4.0/klaridian-linux-x64"
+      sha256 "3e0aea89d62de6e4fff9cac20cc25c72d70e3c8db1eaafd0c10d7634400b1d69"
     end
   end
 
