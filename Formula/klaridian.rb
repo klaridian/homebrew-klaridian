@@ -8,11 +8,11 @@
 #
 # The url/sha256 per platform are filled in per release by
 # packaging/homebrew/render-formula.sh from the release's binary assets.
-# The 0.5.0 / __SHA_*__ placeholders below are substituted there.
+# The 0.5.1 / __SHA_*__ placeholders below are substituted there.
 class Klaridian < Formula
   desc "Generate MCP servers from an OpenAPI spec — native binary, no Node required"
   homepage "https://klaridian.dev"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   # The prebuilt macOS binaries need macOS 13 (Ventura) or later — the
@@ -22,23 +22,23 @@ class Klaridian < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.5.0/klaridian-darwin-arm64"
-      sha256 "65fb38732cef9d62fb8a8319e936dc94ed10875c5d59f4b1bd46217eda16194c"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.5.1/klaridian-darwin-arm64"
+      sha256 "3c1960bfb42a09ce9e0d14eeec29779c7910a4c17eaa290329f6e6546af58f12"
     end
     on_intel do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.5.0/klaridian-darwin-x64"
-      sha256 "1442fd98d0662e40e358727f07399b07e0009cea9525ed08cdb6a1a9c5cbdb66"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.5.1/klaridian-darwin-x64"
+      sha256 "150c69bfd07e0ce6617f584e3151d61137662019557bc1de93a3f1996afad147"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.5.0/klaridian-linux-arm64"
-      sha256 "0a43581df6d964d76342821636cc0f8d2e0dfe4f626229de9a7484e4f52adc83"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.5.1/klaridian-linux-arm64"
+      sha256 "e0ea71d7ad0338c838854a285cf0150e4cf07ca25dddabf60e2e2b4fb22165a5"
     end
     on_intel do
-      url "https://github.com/klaridian/klaridian/releases/download/v0.5.0/klaridian-linux-x64"
-      sha256 "f61753dcdecf876cc76eb58c57de2e7e3a9ccd0642b62f4ac537839007e37b9a"
+      url "https://github.com/klaridian/klaridian/releases/download/v0.5.1/klaridian-linux-x64"
+      sha256 "79358d0c6ab85c6a5b2988e3be8185265f764896e2ef8719dab62de7cc315930"
     end
   end
 
